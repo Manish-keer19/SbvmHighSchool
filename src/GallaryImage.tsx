@@ -3,7 +3,7 @@ import  { useState } from 'react';
 // Gallery Page Component
 function GalleryPage() {
   // Sample gallery data - replace with your actual images
-  const galleryData = {
+  const galleryData:any = {
     events: [
       { id: 1, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Annual Day Celebration" },
       { id: 2, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Science Fair" },
@@ -31,7 +31,8 @@ function GalleryPage() {
   };
 
   const [activeTab, setActiveTab] = useState('events');
-  const [selectedImage, setSelectedImage] = useState(null);
+  type GalleryItem = { id: number; src: string; title: string };
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
   const openModal = (image:any) => {
     setSelectedImage(image);
@@ -75,7 +76,7 @@ function GalleryPage() {
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryData[activeTab].map((item) => (
+          {galleryData[activeTab].map((item:any) => (
             <div
               key={item.id}
               className="group relative bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl cursor-pointer"
