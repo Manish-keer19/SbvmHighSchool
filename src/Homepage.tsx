@@ -2,6 +2,7 @@
 
 
 
+import { Link } from "react-router";
 import schoollogo from "../public/school.jpg";
 import Navbar from "./Navbar";
 
@@ -32,14 +33,14 @@ function HomePage() {
                                     </p>
                                     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                         <div className="rounded-md shadow">
-                                            <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                            <Link to={"/contact"} className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
                                                 Admissions
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="mt-3 sm:mt-0 sm:ml-3">
-                                            <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 bg-opacity-60 hover:bg-opacity-70 md:py-4 md:text-lg md:px-10">
+                                            <Link to={"/contact"} className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 bg-opacity-60 hover:bg-opacity-70 md:py-4 md:text-lg md:px-10">
                                                 Learn more
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -133,9 +134,9 @@ function HomePage() {
                     </h2>
                     <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
                         <div className="inline-flex rounded-md shadow">
-                            <a href="#" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50">
+                            <Link to={"/contact"} className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50">
                                 Contact Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
