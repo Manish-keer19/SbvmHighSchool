@@ -2,10 +2,12 @@ import { FaBook, FaRunning, FaUserGraduate, FaMusic, FaPaintBrush, FaVolleyballB
 import { GiBasketballBall } from 'react-icons/gi';
 // GiMartialArtsUniform does not exist, consider using another icon if needed
 import { MdSportsKabaddi } from 'react-icons/md';
+import Navbar from './Navbar';
 
 const FacilitiesPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Navbar/>
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
         <div className="container mx-auto px-6 text-center">

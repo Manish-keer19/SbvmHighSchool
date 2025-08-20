@@ -6,17 +6,43 @@ import FacilitiesPage from './FacilitiesPage'
 import AboutPage from './About'
 import GalleryContactPage from './GallaryImage'
 
+import { createBrowserRouter, RouterProvider } from 'react-router'
+import { Contact } from 'lucide-react'
+import ContactPage from './Contact'
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element:<HomePage/>
+
+  },
+  {
+    path:"/about",
+    element:<AboutPage/>
+  },
+  {
+    path:"/facilities",
+    element:<FacilitiesPage/>
+  },
+  {
+    path:"/gallery",
+    element:<GalleryContactPage/>
+  },
+  {
+    path:"/contact",
+    element:<ContactPage/>
+  }
+])
+
 function App() {
   return (
-    <div className=' '>
-    <Navbar/>
-    <HomePage/>
-    <FacilitiesPage/>
-    <AboutPage/>
-    <GalleryContactPage/>
+  
 
+  <RouterProvider router={router}>
 
-    </div>
+  </RouterProvider>
+   
   )
 }
 

@@ -1,10 +1,12 @@
 
 import { FaChild, FaGraduationCap, FaUsers, FaHeart, FaTrophy, FaShieldAlt } from 'react-icons/fa';
 import schoolBuilding from '../public/school.jpg';
+import Navbar from './Navbar';
 
 function AboutPage() {
   return (
     <div className="bg-gray-50">
+      <Navbar/>
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

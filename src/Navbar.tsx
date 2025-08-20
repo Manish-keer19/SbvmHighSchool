@@ -1,6 +1,7 @@
 import  { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaBars, FaTimes } from "react-icons/fa";
 import schoolLogo from "../public/school.jpg";
+import { Link } from "react-router";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +33,7 @@ function Navbar() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo and School Name */}
-            <div className="flex items-center space-x-4">
+            <Link to={"/"} className="flex items-center space-x-4">
               <img 
                 src={schoolLogo} 
                 alt="School Logo" 
@@ -42,44 +43,44 @@ function Navbar() {
                 <span className="block leading-tight">Saraswati Bal Vinay</span>
                 <span className="block text-yellow-300">Vidya Mandir</span>
               </h1>
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <a 
-                href="#home" 
+              <Link 
+                to="/" 
                 className="relative group font-medium hover:text-yellow-300 transition-colors duration-300"
               >
                 Home
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a 
-                href="#about" 
+              </Link>
+              <Link 
+                to="/about" 
                 className="relative group font-medium hover:text-yellow-300 transition-colors duration-300"
               >
                 About
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a 
-                href="#facilities" 
+              </Link>
+              <Link 
+                to="/facilities" 
                 className="relative group font-medium hover:text-yellow-300 transition-colors duration-300"
               >
                 Facilities
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a 
-                href="#gallery" 
+              </Link>
+              <Link 
+                to="/gallery" 
                 className="relative group font-medium hover:text-yellow-300 transition-colors duration-300"
               >
                 Gallery
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300"></span>
-              </a>
-              <a 
-                href="#contact" 
+              </Link>
+              <Link 
+                to="/contact" 
                 className="px-4 py-2 bg-yellow-400 text-blue-800 rounded-lg font-semibold hover:bg-yellow-300 transition-colors duration-300 shadow-md hover:shadow-lg"
               >
                 Contact Us
-              </a>
+              </Link>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -99,41 +100,41 @@ function Navbar() {
         {/* Mobile Navigation */}
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-blue-700 px-4 pb-4`}>
           <div className="flex flex-col space-y-4">
-            <a 
-              href="#home" 
+            <Link 
+              to="/home" 
               className="block py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </a>
-            <a 
-              href="#about" 
+            </Link>
+            <Link 
+              to="/about" 
               className="block py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
-            <a 
-              href="#facilities" 
+            </Link>
+            <Link 
+              to="/facilities" 
               className="block py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Facilities
-            </a>
-            <a 
-              href="#gallery" 
+            </Link>
+            <Link 
+              to="/gallery" 
               className="block py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Gallery
-            </a>
-            <a 
-              href="#contact" 
+            </Link>
+            <Link 
+              to="/contact" 
               className="block py-2 px-4 bg-yellow-400 text-blue-800 rounded-lg font-semibold text-center hover:bg-yellow-300 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </header>
