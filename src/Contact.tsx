@@ -204,6 +204,7 @@
 import  { useState } from 'react'
 import Navbar from './Navbar';
 import { FaPhone } from 'react-icons/fa';
+import Footer from './Footter';
 
 // Contact Page Component
 function ContactPage() {
@@ -418,6 +419,7 @@ function ContactPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

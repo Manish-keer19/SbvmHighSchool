@@ -5,12 +5,15 @@
 import { Link } from "react-router";
 import schoollogo from "../public/school.jpg";
 import Navbar from "./Navbar";
+import priciple from "./assets/priciple.jpg"
+
+import Footer from "./Footter";
 
 
 function HomePage() {
     return (
         <div className="min-h-screen bg-gray-50">
-            <Navbar/>
+            <Navbar />
             {/* Hero Section */}
             <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden">
                 <div className="max-w-7xl mx-auto">
@@ -19,14 +22,14 @@ function HomePage() {
                             <div className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex flex-col lg:flex-row items-center">
                                 {/* Left side - School info */}
                                 <div className="sm:text-center lg:text-left lg:w-1/2">
-                                    <img 
-                                        src={schoollogo} 
-                                        alt="School Logo" 
+                                    <img
+                                        src={schoollogo}
+                                        alt="School Logo"
                                         className="h-24 mx-auto lg:mx-0 mb-6 rounded-lg shadow-xl"
                                     />
                                     <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
                                         <span className="block">SARASWATI BAL</span>
-                                        <span className="block text-yellow-300">VINAY MANDIR</span>
+                                        <span className="block text-yellow-300"> VINAY VIDHYA  MANDIR</span>
                                     </h1>
                                     <p className="mt-3 text-base text-blue-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                                         Shaping futures through excellence in education and values
@@ -44,13 +47,13 @@ function HomePage() {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Right side - Principal's image and details */}
                                 <div className="mt-10 lg:mt-0 lg:w-1/2 lg:pl-12 flex justify-center">
                                     <div className="bg-white rounded-lg shadow-xl overflow-hidden max-w-md w-full">
-                                        <img 
-                                            src="https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg" 
-                                            alt="Principal" 
+                                        <img
+                                            src={priciple}
+                                            alt="Principal"
                                             className="w-full h-64 object-cover"
                                         />
                                         <div className="p-6">
@@ -60,7 +63,7 @@ function HomePage() {
                                             </p>
                                             <div className="mt-4 flex items-center">
                                                 <div>
-                                                    <p className="text-sm font-medium text-gray-900">Mr. Manish keer</p>
+                                                    <p className="text-sm font-medium text-gray-900">Mr. Ajay Bijawat</p>
                                                     <p className="text-sm text-blue-600">Principal</p>
                                                 </div>
                                             </div>
@@ -163,6 +166,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

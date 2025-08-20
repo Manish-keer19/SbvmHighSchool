@@ -3,6 +3,7 @@ import { GiBasketballBall } from 'react-icons/gi';
 // GiMartialArtsUniform does not exist, consider using another icon if needed
 import { MdSportsKabaddi } from 'react-icons/md';
 import Navbar from './Navbar';
+import Footer from './Footter';
 
 const FacilitiesPage = () => {
   return (
@@ -199,6 +200,7 @@ const FacilitiesPage = () => {
           </button>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

@@ -1,33 +1,36 @@
 import  { useState } from 'react';
 import Navbar from './Navbar';
+import s1 from "./assets/st1.jpg"
+import s2 from "./assets/st2.jpg";
+import Footer from './Footter';
 
 // Gallery Page Component
 function GalleryPage() {
   // Sample gallery data - replace with your actual images
   const galleryData:any = {
     events: [
-      { id: 1, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Annual Day Celebration" },
-      { id: 2, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Science Fair" },
-      { id: 3, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Classroom Activities" },
-      { id: 4, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Sports Day" },
-      { id: 5, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Art Exhibition" },
-      { id: 6, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "School Building" }
+      { id: 1, src: s1, title: "Annual Day Celebration" },
+      { id: 2, src: s2, title: "Science Fair" },
+      { id: 3, src: s1, title: "Classroom Activities" },
+      { id: 4, src: s2, title: "Sports Day" },
+      { id: 5, src: s1, title: "Art Exhibition" },
+      { id: 6, src: s2, title: "School Building" }
     ],
     campus: [
-      { id: 1, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Main Building" },
-      { id: 2, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Library" },
-      { id: 3, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Science Lab" },
-      { id: 4, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Classroom" },
-      { id: 5, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Sports Ground" },
-      { id: 6, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Computer Lab" }
+      { id: 1, src: s1, title: "Main Building" },
+      { id: 2, src: s1, title: "Library" },
+      { id: 3, src: s1, title: "Science Lab" },
+      { id: 4, src: s1, title: "Classroom" },
+      { id: 5, src: s1, title: "Sports Ground" },
+      { id: 6, src: s1, title: "Computer Lab" }
     ],
     achievements: [
-      { id: 1, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Science Olympiad Winners" },
-      { id: 2, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Academic Excellence Award" },
-      { id: 3, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Sports Championship" },
-      { id: 4, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Cultural Fest Winners" },
-      { id: 5, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Debate Competition" },
-      { id: 6, src: "https://res.cloudinary.com/manish19/image/upload/v1754281006/spring/message/z02pyvwzppot0o9wqoe4.jpg", title: "Art Competition" }
+      { id: 1, src: s1, title: "Science Olympiad Winners" },
+      { id: 2, src: s1, title: "Academic Excellence Award" },
+      { id: 3, src: s1, title: "Sports Championship" },
+      { id: 4, src: s1, title: "Cultural Fest Winners" },
+      { id: 5, src: s1, title: "Debate Competition" },
+      { id: 6, src: s1, title: "Art Competition" }
     ]
   };
 
@@ -123,6 +126,7 @@ function GalleryPage() {
           </div>
         </div>
       )}
+      <Footer/>
     </div>
   );
 }
