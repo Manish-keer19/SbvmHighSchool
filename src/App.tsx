@@ -1,5 +1,5 @@
 
-import Navbar from './Navbar'
+
 
 import HomePage from './Homepage'
 import FacilitiesPage from './FacilitiesPage'
@@ -7,7 +7,7 @@ import AboutPage from './About'
 import GalleryContactPage from './GallaryImage'
 
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import { Contact } from 'lucide-react'
+
 import ContactPage from './Contact'
 
 
